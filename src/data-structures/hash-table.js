@@ -87,3 +87,5 @@ class HashTable {
     return Object.keys(this.keys);
   }
 }
+
+export default HashTable;
