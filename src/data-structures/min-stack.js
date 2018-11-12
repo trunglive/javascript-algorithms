@@ -3,18 +3,32 @@ class MinStack {
     this.data = [];
   }
 
+  /**
+   * @param {number} x
+   * @return {number}
+   */
   push(x) {
     this.data.push(x);
+    return this.data.length;
   }
 
+  /**
+   * @return {number}
+   */
   pop() {
     return this.data.pop();
   }
 
+  /**
+   * @return {number}
+   */
   top() {
     return this.data[this.data.length - 1];
   }
 
+  /**
+   * @return {number}
+   */
   getMin() {
     if (this.data.length === 0) return;
 
