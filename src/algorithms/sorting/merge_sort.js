@@ -36,6 +36,6 @@ function mergeTwoSortedArrays(firstArray, secondArray) {
       sortedArray.push(secondArray.shift());
     }
   }
-  
-  return sortedArray.concat(firstArray, secondArray);
+
+  return [...sortedArray, ...firstArray, ...secondArray];
 }
