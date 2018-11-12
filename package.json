@@ -1,0 +1,28 @@
+{
+  "name": "javascript-algorithms",
+  "version": "1.0.0",
+  "description": "algorithms and data structures in JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trunglive/javascript-algorithms.git"
+  },
+  "keywords": [
+    "algorithms",
+    "data structures",
+    "computer science"
+  ],
+  "author": "Trung Vo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trunglive/javascript-algorithms/issues"
+  },
+  "homepage": "https://github.com/trunglive/javascript-algorithms#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  }
+}
