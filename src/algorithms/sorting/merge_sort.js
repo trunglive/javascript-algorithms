@@ -1,4 +1,26 @@
 /**
+ * Utility function for Merge Sort
+ *
+ * @param {*[]} firstArray
+ * @param {*[]} secondArray
+ * @return {number[]}
+ */
+
+function mergeTwoSortedArrays(firstArray, secondArray) {
+  const sortedArray = [];
+
+  while (firstArray.length && secondArray.length) {
+    if (firstArray[0] < secondArray[0]) {
+      sortedArray.push(firstArray.shift());
+    } else {
+      sortedArray.push(secondArray.shift());
+    }
+  }
+
+  return [...sortedArray, ...firstArray, ...secondArray];
+}
+
+/**
  * Merge Sort
  *
  * @param {*[]} originalArray
@@ -20,22 +42,4 @@ function mergeSort(originalArray) {
   return mergeTwoSortedArrays(leftSortedArray, rightSortedArray);
 }
 
-/**
- * @param {*[]} firstArray
- * @param {*[]} secondArray
- * @return {number[]}
- */
-
-function mergeTwoSortedArrays(firstArray, secondArray) {
-  const sortedArray = [];
-
-  while (firstArray.length && secondArray.length) {
-    if (firstArray[0] < secondArray[0]) {
-      sortedArray.push(firstArray.shift());
-    } else {
-      sortedArray.push(secondArray.shift());
-    }
-  }
-
-  return [...sortedArray, ...firstArray, ...secondArray];
-}
+export default mergeSort;
