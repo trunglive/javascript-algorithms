@@ -1,7 +1,6 @@
 class HashTable {
   constructor() {
     this.buckets = new Array(32).fill(null).map(() => new LinkedList());
-
     this.keys = {};
   }
 
